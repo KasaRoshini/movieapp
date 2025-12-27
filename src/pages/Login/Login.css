@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url("/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.login-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 10;
+  width: 150px;
+  margin-bottom: 40px;
+  object-fit: contain;
+}
+.login-form {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 60px 50px;
+  border-radius: 6px;
+  width: 400px;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.login-form h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.login-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+}
+.login-form input::placeholder {
+  color: #888;
+}
+.password-container {
+  position: relative;
+}
+.password-container input {
+  padding-right: 45px;
+}
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  font-size: 18px;
+}
+.eye-icon:hover {
+  color: #fff;
+}
+.login-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.login-form button:hover {
+  background-color: #f6121d;
+}
+.form-help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #888;
+  margin-top: 10px;
+}
+.form-help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #888;
+  margin-top: 10px;
+}
+.form-help .remembered {
+  display: flex;
+  align-items: center; 
+  gap: 5px; 
+}
+.form-help .remembered input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+}
+.form-help .remembered label {
+  font-size: 13px;
+  cursor: pointer;
+  color: #888;
+  line-height: 16px;
+}
+.form-help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.forgot-password {
+  color: #888;
+  text-decoration: none;
+  cursor: pointer;
+}
+.forgot-password:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.form-switch {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #888;
+}
+.form-switch span {
+  color: #fff;
+  cursor: pointer;
+}
+.form-switch span:hover {
+  text-decoration: underline;
+}
+.login-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #141414;
+}
+.login-spinner img {
+  width: 80px;
+  animation: spin 1.5s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

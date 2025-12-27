@@ -1,0 +1,73 @@
+.player {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.player .back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+.player .back-btn:hover {
+  transform: scale(1.1);
+}
+.player iframe {
+  width: 80%;
+  height: 70%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+.no-trailer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.no-trailer .fallback-poster {
+  width: 60%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+.no-trailer h2 {
+  margin: 10px 0;
+  font-size: 28px;
+}
+.no-trailer p {
+  margin: 5px 0;
+  font-size: 16px;
+  max-width: 700px;
+}
+@media screen and (max-width: 768px) {
+  .player iframe {
+    width: 95%;
+    height: 50%;
+  }
+  .no-trailer .fallback-poster {
+    width: 90%;
+  }
+  .no-trailer h2 {
+    font-size: 22px;
+  }
+  .no-trailer p {
+    font-size: 14px;
+  }
+  .player .back-btn {
+    width: 35px;
+    height: 35px;
+  }
+}
